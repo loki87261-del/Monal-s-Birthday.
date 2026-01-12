@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Open AI Studio App</title>
+  <style>
+    html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial}
+    .wrap{min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center}
+    a{color:#1a73e8}
+    .note{color:#555;margin-top:12px;font-size:0.95rem}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Opening your AI Studio app…</h1>
+    <p>If you are not redirected automatically, <a id="link" href="https://ai.studio/apps/drive/11Vo1WmjwQ-Qh8ssWt3GqO1uRpKd9PdZA">click here to open the app</a>.</p>
+    <p class="note">This page redirects you to your AI Studio app.</p>
+  </div>
+
+  <script>
+    // JavaScript redirect as a fallback
+    (function () {
+      var target = "https://ai.studio/apps/drive/11Vo1WmjwQ-Qh8ssWt3GqO1uRpKd9PdZA";
+      try {
+        // Use replace so back button doesn't keep this page in history
+        window.location.replace(target);
+      } catch (e) {
+        window.location.href = target;
+      }
+    })();
+  </script>
+</body>
+</html>
